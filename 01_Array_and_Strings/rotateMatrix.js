@@ -12,4 +12,7 @@ function rotateMatrixInPlace(matrix) {
 rotate a square matrix 90 degrees, counter-closewise
 */
 
-module.exports = rotateMatrix;
+module.exports = { 
+  rotateMatrix,
+  rotateMatrixInPlace
+};
