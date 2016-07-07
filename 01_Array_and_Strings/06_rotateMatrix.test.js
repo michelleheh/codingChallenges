@@ -1,8 +1,8 @@
 'use strict';
 
 const assert = require('chai').assert;
-const rotateMaxtrix = require('./05_rotateMaxtrix').rotateMaxtrix;
-const rotateMatrixInPlace = require('./05_rotateMaxtrix').rotateMatrixInPlace;
+const rotateMaxtrix = require('./06_rotateMaxtrix').rotateMaxtrix;
+const rotateMatrixInPlace = require('./06_rotateMaxtrix').rotateMatrixInPlace;
 
 describe('Array_and_Strings', function() {
   describe('rotateMaxtrix', function() {
