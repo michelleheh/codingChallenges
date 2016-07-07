@@ -7,14 +7,9 @@ describe('Array_and_Strings', function() {
   describe('reverseStr', function() {
     it('should reverse a str in place', function() {
       let myStr1 = 'abc';
-      reverseStr(myStr1);
-
       let myStr2 = 'abcd';
-      reverseStr(myStr2);
-
-      assert.equal(myStr1, 'cba');
-      assert.equal(myStr2, 'dcba');
-      
+      assert.equal(reverseStr(myStr1), 'cba');
+      assert.equal(reverseStr(myStr2), 'dcba');
     });
   });
 });
