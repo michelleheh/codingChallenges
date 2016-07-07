@@ -18,9 +18,10 @@ function rotateMatrix(matrix) {
 
 function rotateMatrixInPlace(matrix) {
   let n = matrix.length;
-  let m = Math.floor(n/2);
-  for ( let row = 0; row < m; row++) {
-    for ( let col = 0; col <= m; col++) {
+  let r = Math.ceil(n/2);
+  let c = ( n % 2 === 0 ) ? r : r - 1;
+  for ( let row = 0; row < r; row++) {
+    for ( let col = 0; col < c; col++) {
       let temp = matrix[row][col];
       matrix[row][col] = matrix[col][n - 1 - row];
       matrix[col][n - 1 - row] = matrix[n - 1 - row][n - 1 - col];
