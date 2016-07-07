@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('chai').assert;
-const setToZero = require('./06_setToZero');
+const setToZero = require('./07_setToZero');
 
 describe('Array_and_Strings', function() {
   describe('setToZero', function() {
