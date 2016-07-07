@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('chai').assert;
-const uniqueCharacter = require('./uniqueCharacters.js');
+const uniqueCharacter = require('./01_uniqueCharacters');
 
 describe('Array_and_Strings', function() {
   describe('uniqueCharacter', function() {
