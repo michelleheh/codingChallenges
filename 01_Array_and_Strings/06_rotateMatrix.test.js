@@ -22,7 +22,7 @@ describe('Array_and_Strings', function() {
     });
 
     it('should rotate Matrix', function() {
-      assert.deepEqual(rotateMaxtrix(matrix), rotatedMatrix);
+      assert.deepEqual(rotateMatrix(matrix), rotatedMatrix);
     });
 
     it('should rotate Matrix in place', function() {
