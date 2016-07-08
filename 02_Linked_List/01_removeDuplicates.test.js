@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('chai').assert;
-const removeDuplicates = require('./08_removeDuplicates');
+const removeDuplicates = require('./01_removeDuplicates');
 
 describe('Linked_List', function() {
   describe('removeDuplicates', function() {
