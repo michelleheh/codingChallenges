@@ -2,7 +2,10 @@
 Implement an algorith to find the kth of last element of a singly linked List
 */
 
-function findLastkth(linkedList, k) {
+/*
+1. Use an array to store the reference to the nodes
+*/
+function findLastkth1(linkedList, k) {
   let current = linkedList.head;
   let arr = [];
   while ( current ) {
@@ -12,4 +15,17 @@ function findLastkth(linkedList, k) {
   return arr[arr.length  - k];
 };
 
-module.exports = findLastkth;
+/*
+2. recusive solution
+*/
+function findLastkth2(linkedList, k) {
+  let current = linkedList.head;
+  let arr = [];
+  while ( current ) {
+    arr.push(current);
+    current = current.next;
+  }
+  return arr[arr.length  - k];
+};
+
+module.exports = findLastkth2;
