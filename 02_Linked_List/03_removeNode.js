@@ -4,7 +4,7 @@ Input: the node c from the linked list a -> b -> c -> d -> e
 Result: nothing is returned but the new linked list looks like a -> b -> d -> e
 */
 
-function removeNode(linkedList, node) {
+function removeNode(node) {
 
 };
 
