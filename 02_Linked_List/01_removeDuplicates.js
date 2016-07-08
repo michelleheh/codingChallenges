@@ -5,7 +5,16 @@ How would you solve this problem if a temporary buffer is not allowed?
 */
 
 function removeDuplicates(linkedList){
+  let store = {};
+  let previous = linkedList.head;
+  let current = previous.next;
 
+  while ( current.next ) {
+    store[previous.value] = true;
+    if ( store[current.value] ) previous.next = current.next;
+    previous = current;
+    current = current.next;
+  }
 };
 
 module.exports = removeDuplicates;
