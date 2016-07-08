@@ -5,3 +5,5 @@ write code to partition a linked list around a value x, such that all nodes less
 function partition(linkedList, x) {
 
 };
+
+module.exports = partition;
