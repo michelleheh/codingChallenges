@@ -15,6 +15,33 @@ what if the two numbers have different digits
 */
 
 function addNumbers(linkedList1, linkedList2) {
+  let newList = {head: null};
+  let newCurrent;
+  let current1 = linkedList1.head;
+  let current2 = linkedList2.head;
+  let count = 1;
+  let extra = 0
+
+  while ( current1 || current2 ) {
+    let sum = current1.value + current2.value + extra;
+    console.log('sum', sum);
+    if ( sum > 9 ) {
+      newCurrent = { value: sum - 10, next: null };
+      extra = 1;
+    } else {
+      newCurrent = { value: sum, next: null };
+      extra = 0;
+    }
+    if ( count === 1 ) {
+      newList.head = newCurrent;
+    } 
+    newCurrent.next = newCurrent;
+    current1 = current1.next;
+    current2 = current2.next;
+    count ++;
+  }
+
+  return newList;
 
 };
 
