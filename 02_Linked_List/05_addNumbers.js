@@ -14,15 +14,15 @@ what if the two numbers have different digits
 
 */
 
-function addNumbers(linkedList1, linkedList2) {
+function addNumbers(linkedList1Head, linkedList2Head) {
 
 };
 
-function addNumbersReverse(linkedList1, linkedList2) {
+function addNumbersReverse(linkedList1Head, linkedList2Head) {
 
 };
 
-function addNumbersExtra(linkedList1, linkedList2) {
+function addNumbersExtra(linkedList1Head, linkedList2Head) {
 
 };
 
