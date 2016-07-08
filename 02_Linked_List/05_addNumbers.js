@@ -46,4 +46,16 @@ function addNumbers(linkedList1, linkedList2) {
 
 };
 
-module.exports = addNumbers;
+function addNumbersReverse(linkedList1, linkedList2) {
+
+};
+
+function addNumbersExtra(linkedList1, linkedList2) {
+
+};
+
+module.exports = {
+  addNumbers,
+  addNumbersReverse,
+  addNumbersExtra
+};
