@@ -23,7 +23,6 @@ function setToZero(matrix) {
       }
     });
   });
-  console.log(matrix);
   return matrix;
 };
 
