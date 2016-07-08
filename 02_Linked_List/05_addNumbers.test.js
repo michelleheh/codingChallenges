@@ -26,10 +26,10 @@ describe('Array_and_Strings', function() {
       node05.next = node09;
       node09.next = node02;
       
-      const sumList = addNumbers(linkedList1, linkedList2);
-      assert.equal(sumList.head.value, 2);
-      assert.equal(sumList.head.next.value, 1);
-      assert.equal(sumList.head.next.next.value, 9);
+      const sumListHead = addNumbers(linkedList1.head, linkedList2.head);
+      assert.equal(sumListHead.value, 2);
+      assert.equal(sumListHead.next.value, 1);
+      assert.equal(sumListHead.next.next.value, 9);
     });
 
     it('should add two numbers in reverse order', function() {
@@ -51,10 +51,10 @@ describe('Array_and_Strings', function() {
       node02.next = node09;
       node09.next = node05;
       
-      const sumList = addNumbersReverse(linkedList1, linkedList2);
-      assert.equal(sumList.head.value, 9);
-      assert.equal(sumList.head.next.value, 1);
-      assert.equal(sumList.head.next.next.value, 2);
+      const sumListHead = addNumbersReverse(linkedList1.head, linkedList2.head);
+      assert.equal(sumListHead.value, 9);
+      assert.equal(sumListHead.next.value, 1);
+      assert.equal(sumListHead.next.next.value, 2);
     });
 
     xit('should add two numbers of different length in reverse order', function() {
@@ -78,11 +78,11 @@ describe('Array_and_Strings', function() {
       node02.next = node09;
       node09.next = node05;
       
-      const sumList = addNumbersReverse(linkedList1, linkedList2);
-      assert.equal(sumList.head.value, 3);
-      assert.equal(sumList.head.next.value, 9);
-      assert.equal(sumList.head.next.next.value, 1);
-      assert.equal(sumList.head.next.next.next.value, 2);
+      const sumListHead = addNumbersReverse(linkedList1.head, linkedList2.head);
+      assert.equal(sumListHead.value, 3);
+      assert.equal(sumListHead.next.value, 9);
+      assert.equal(sumListHead.next.next.value, 1);
+      assert.equal(sumListHead.next.next.next.value, 2);
     });
 
   });
