@@ -3,6 +3,7 @@ write an algorithm such that if an element in an MxN matrix is 0, the entire row
 */
 
 function setToZero(matrix) {
+
   let indices = {
     rows: {},
     cols: {}
@@ -23,6 +24,7 @@ function setToZero(matrix) {
       }
     });
   });
+  
   return matrix;
 };
 
