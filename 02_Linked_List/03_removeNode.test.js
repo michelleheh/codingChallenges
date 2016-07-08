@@ -41,7 +41,7 @@ describe('Array_and_Strings', function() {
       assert.equal(myList.head.value, 2);
     });
 
-    it('should remove tail', function() {
+    it('should NOT be able to remove tail', function() {
       const node01 = {value: 1, next: null};
       const node02 = {value: 2, next: null};
       const node03 = {value: 3, next: null};
@@ -56,7 +56,7 @@ describe('Array_and_Strings', function() {
       node04.next = node05;
 
       removeNode(node05);
-      assert.equal(node04.next, null);
+      assert.equal(node04.next.value, 5);
     });
 
   });
