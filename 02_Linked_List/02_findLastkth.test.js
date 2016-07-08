@@ -19,8 +19,8 @@ describe('Array_and_Strings', function() {
       node03.next = node04;
       node04.next = node05;
       
-      assert.equal(findLastkth(myList, 1).value, 5);
-      assert.equal(findLastkth(myList, 2).value, 4);
+      assert.equal(findLastkth(myList.head, 1).value, 5);
+      assert.equal(findLastkth(myList.head, 2).value, 4);
 
     });
   });
