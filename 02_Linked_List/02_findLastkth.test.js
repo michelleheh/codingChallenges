@@ -12,7 +12,8 @@ describe('Array_and_Strings', function() {
       const node04 = {value: 4, next: null};
       const node05 = {value: 5, next: null};
       
-      let myList.head = node01;
+      let myList = {};
+      myList.head = node01;
       node01.next = node02;
       node02.next = node03;
       node03.next = node04;

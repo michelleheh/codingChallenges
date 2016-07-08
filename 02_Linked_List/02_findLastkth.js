@@ -2,7 +2,7 @@
 Implement an algorith to find the kth of last element of a singly linked List
 */
 
-function findkth(linkedList, k) {
+function findLastkth(linkedList, k) {
   let current = linkedList.head;
   let arr = [];
   while ( current.next ) {
