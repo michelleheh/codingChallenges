@@ -11,8 +11,11 @@ function removeDuplicates(linkedList){
 
   while ( current.next ) {
     store[previous.value] = true;
-    if ( store[current.value] ) previous.next = current.next;
-    previous = current;
+    if ( store[current.value] ) { 
+      previous.next = current.next; 
+    } else {
+      previous = current;
+    }
     current = current.next;
   }
 };
