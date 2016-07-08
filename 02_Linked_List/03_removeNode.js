@@ -5,14 +5,14 @@ Result: nothing is returned but the new linked list looks like a -> b -> d -> e
 */
 
 function removeNode(linkedList, node) {
-  let preivious;
+  let previous;
   let current = linkedList.head;
-  while ( current.next ) {
+  while ( current ) {
     if ( current === node ) {
       if ( previous ) {
         previous.next = current.next;
       } else {
-        linkedList.head = current.next;
+        linkedList.head = linkedList.head.next;
       }
     }
     previous = current;
