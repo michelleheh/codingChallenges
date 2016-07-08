@@ -12,7 +12,7 @@ describe('Array_and_Strings', function() {
         [9,10,11,12]
       ];
 
-      assert.equal(setToZero(matrix), [
+      assert.deepEqual(setToZero(matrix), [
         [1,2,0,4],
         [0,0,0,0],
         [9,10,0,12]
@@ -26,7 +26,7 @@ describe('Array_and_Strings', function() {
         [9,10,11,12]
       ];
 
-      assert.equal(setToZero(matrix), [
+      assert.deepEqual(setToZero(matrix), [
         [1,0,0,4],
         [0,0,0,0],
         [9,0,0,12]
