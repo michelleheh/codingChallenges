@@ -14,10 +14,10 @@ what if the two numbers have different digits
 
 */
 
-function addNumbers(linkedList1, linkedList2) {
+function addNumbers(linkedList1Head, linkedList2Head) {
   let newList = {head: null};
-  let current1 = linkedList1.head;
-  let current2 = linkedList2.head;
+  let current1 = linkedList1Head;
+  let current2 = linkedList2Head;
   let count = 1;
   let extra = 0;
 
@@ -42,15 +42,14 @@ function addNumbers(linkedList1, linkedList2) {
     count ++;
   }
 
-  return newList;
+  return newList.head;
+};
+
+function addNumbersReverse(linkedList1Head, linkedList2Head) {
 
 };
 
-function addNumbersReverse(linkedList1, linkedList2) {
-
-};
-
-function addNumbersExtra(linkedList1, linkedList2) {
+function addNumbersExtra(linkedList1Head, linkedList2Head) {
 
 };
 
