@@ -1,6 +1,7 @@
 'use strict';
 
 const assert = require('chai').assert;
+const expect = require('chai').expect;
 const partition = require('./04_partition');
 
 describe('Array_and_Strings', function() {
