@@ -12,4 +12,4 @@ function findLastkth(linkedList, k) {
   return arr[-k];
 };
 
-module.exports = findkth;
+module.exports = findLastkth;
