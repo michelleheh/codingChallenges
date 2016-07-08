@@ -27,7 +27,7 @@ describe('Array_and_Strings', function() {
       ];
 
       assert.deepEqual(setToZero(matrix), [
-        [1,0,0,4],
+        [0,0,0,0],
         [0,0,0,0],
         [9,0,0,12]
       ]);
