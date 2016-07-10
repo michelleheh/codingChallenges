@@ -3,7 +3,6 @@
 const assert = require('chai').assert;
 const addNumbers = require('./05_addNumbers').addNumbers;
 const addNumbersReverse = require('./05_addNumbers').addNumbersReverse;
-const addNumbersExtra = require('./05_addNumbers').addNumbersExtra;
 
 describe('Array_and_Strings', function() {
   describe('addNumbers', function() {

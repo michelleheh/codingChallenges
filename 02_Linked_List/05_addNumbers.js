@@ -66,10 +66,6 @@ function addNumbersReverse(linkedList1Head, linkedList2Head) {
   }
 };
 
-function addNumbersExtra(linkedList1Head, linkedList2Head) {
-
-};
-
 module.exports = {
   addNumbers,
   addNumbersReverse,
