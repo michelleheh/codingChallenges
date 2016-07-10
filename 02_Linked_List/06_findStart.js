@@ -10,7 +10,21 @@ Ouput: C
 */
 
 function findStart(linkedListHead) {
+  let runner1 = linkedListHead.next;
+  let runner2 = linkedListHead.next.next;
 
+  while ((runner1 !== runner2)) {
+    runner1 = runner1.next;
+    runner2 = runner2.next.next;
+  }
+
+  runner2 = linkedListHead;
+
+  while (runner1 !== runner2) {
+    runner1 = runner1.next;
+    runner2 = runner2.next;
+  }
+  return runner1;
 };
 
 module.exports = findStart;
