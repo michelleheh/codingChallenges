@@ -46,7 +46,24 @@ function addNumbers(linkedList1Head, linkedList2Head) {
 };
 
 function addNumbersReverse(linkedList1Head, linkedList2Head) {
-
+  // base case: 
+  let sum = linkedList1Head.value + linkedList2Head.value;
+  let extra = 0;
+  if ( !linkedList1Head.next ) {
+    if ( sum > 10 ) {
+      extra = 1;
+      sum = sum - 10;
+    }
+    return { value: sum, next: null, extra: extra };
+  } else {
+    let returnNode = addNumbersReverse(linkedList1Head.next, linkedList2Head.next);
+    sum = sum + returnNode.extra;
+    if ( sum > 10 ) {
+      extra = 1;
+      sum = sum - 10;
+    }
+    return { value: sum, next: returnNode, extra: extra };
+  }
 };
 
 function addNumbersExtra(linkedList1Head, linkedList2Head) {
