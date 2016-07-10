@@ -68,6 +68,5 @@ function addNumbersReverse(linkedList1Head, linkedList2Head) {
 
 module.exports = {
   addNumbers,
-  addNumbersReverse,
-  addNumbersExtra
+  addNumbersReverse
 };
