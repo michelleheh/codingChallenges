@@ -56,7 +56,7 @@ describe('Array_and_Strings', function() {
       assert.equal(sumListHead.next.next.value, 2);
     });
 
-    xit('should add two numbers of different length in reverse order', function() {
+    it('should add two numbers of different length in reverse order', function() {
       const node07 = {value: 7, next: null};
       const node01 = {value: 1, next: null};
       const node06 = {value: 6, next: null};

@@ -46,7 +46,15 @@ function addNumbers(linkedList1Head, linkedList2Head) {
 };
 
 function addNumbersReverse(linkedList1Head, linkedList2Head) {
-  // base case: 
+  let current1 = linkedList1Head;
+  let current2 = linkedList2Head;
+  while ( current1 || current2 ) {
+    if ( !current1 ) linkedList1Head = { value: 0, next: linkedList1Head };
+    if ( !current2 ) linkedList2Head = { value: 0, next: linkedList2Head };
+    if ( current1 ) current1 = current1.next;
+    if ( current2 ) current2 = current2.next;
+  }
+
   let sum = linkedList1Head.value + linkedList2Head.value;
   let extra = 0;
   if ( !linkedList1Head.next ) {
