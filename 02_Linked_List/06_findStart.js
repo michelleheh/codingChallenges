@@ -7,6 +7,10 @@ Circular linked list: A(corrupt) linked list in which a node's next pointer poin
 EXAMPLE
 Input: A -> B -> C -> D -> E -> C [the same C as earlier]
 Ouput: C
+
+Constraint:
+Time complexity: O(n)
+space complextity: O(1)
 */
 
 function findStart(linkedListHead) {
