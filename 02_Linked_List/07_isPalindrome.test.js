@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('chai').assert;
-const isPalindrome = require('./06_isPalindrome');
+const isPalindrome = require('./07_isPalindrome');
 
 describe('Array_and_Strings', function() {
   describe('isPalindrome', function() {
