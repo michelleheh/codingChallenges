@@ -5,8 +5,29 @@ Classic problem of the Towers of Hanoi, you have 3 towers and N disks of differe
 3. A disk can only be placed on top of a larger disk
 */
 
-function moveTower(N) {
+function moveTower(N, origin, buffer, target) {
+  if ( N === 1 ) {
+    console.log(`more from ${origin.name} to ${target.name}`);
+    target.push(origin.pop());
+  } else {
+    moveTower(N - 1, origin, target, buffer);
+    moveTower(1, origin, buffer, target);
+    moveTower(N - 1, buffer, origin, target);
+  }
 
+};
+
+const Tower = function(name) {
+  this.name = name;
+  this.storage = [];
+};
+
+Tower.prototype.push = function(item) {
+  this.storage.push(item);
+};
+
+Tower.prototype.pop = function() {
+  return this.storage.pop();
 };
 
 module.exports = moveTower;
