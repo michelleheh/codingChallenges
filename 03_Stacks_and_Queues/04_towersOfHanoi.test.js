@@ -1,7 +1,7 @@
 'use strict';
 
 const assert = require('chai').assert;
-const towersOfHanoi = require('./04_towersOfHanoi').towersOfHanoi;
+const towersOfHanoi = require('./04_towersOfHanoi').moveTower;
 const Tower = require('./04_towersOfHanoi').Tower;
 
 describe('Array_and_Strings', function() {
@@ -15,7 +15,7 @@ describe('Array_and_Strings', function() {
       towerA.push(2);
       towerA.push(1);
       
-      towersOfHanoi(3, towerA, towerB, towerC);
+      moveTower(3, towerA, towerB, towerC);
 
       assert.deepEqual([3,2,1], towerC.storage);
     });
