@@ -17,6 +17,10 @@ function moveTower(N, origin, buffer, target) {
 
 };
 
+/*
+Provided below is a class of Tower to be used in the main function
+*/
+
 const Tower = function(name) {
   this.name = name;
   this.storage = [];
@@ -30,4 +34,7 @@ Tower.prototype.pop = function() {
   return this.storage.pop();
 };
 
-module.exports = moveTower;
+module.exports = {
+  moveTower,
+  Tower
+};
