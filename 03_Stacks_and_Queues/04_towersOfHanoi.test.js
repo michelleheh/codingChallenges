@@ -1,15 +1,15 @@
 'use strict';
 
 const assert = require('chai').assert;
-const towersOfHanoi = require('./04_towersOfHanoi').moveTower;
+const moveTower = require('./04_towersOfHanoi').moveTower;
 const Tower = require('./04_towersOfHanoi').Tower;
 
 describe('Array_and_Strings', function() {
   describe('towersOfHanoi', function() {
     it('move from A to C', function() {
-      let towerA = new Tower();
-      let towerB = new Tower();
-      let towerC = new Tower();
+      let towerA = new Tower('A');
+      let towerB = new Tower('B');
+      let towerC = new Tower('C');
 
       towerA.push(3);
       towerA.push(2);
